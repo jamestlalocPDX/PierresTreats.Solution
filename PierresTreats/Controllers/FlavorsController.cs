@@ -46,7 +46,7 @@ namespace PierresTreats.Controllers
       _db.Flavors.Add(flavor);
       if (TreatId != 0)
       {
-        _db.TreatAuthor.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
+        _db.TreatFlavor.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
       }
       _db.SaveChanges();
       return RedirectToAction("Index");
@@ -69,13 +69,13 @@ namespace PierresTreats.Controllers
     }
 
     [HttpPost]
-    public ActionResult Edit(Flavor Flavor, int TreatId)
+    public ActionResult Edit(Flavor flavor, int TreatId)
     {
       if (TreatId != 0)
       {
         _db.TreatFlavor.Add(new TreatFlavor() { TreatId = TreatId, FlavorId = flavor.FlavorId });
       }
-      _db.Entry(Flavor).State = EntityState.Modified;
+      _db.Entry(flavor).State = EntityState.Modified;
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
