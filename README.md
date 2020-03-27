@@ -15,14 +15,16 @@ _This C# codebase will build a user-friendly MVC Web application, allowing Pierr
 
 | Behavior | Input | Output |
 |----------|:-----:|--------|
-| Eau Claire enters stylist name. | "Jane" | newStylist.name == "Jane" |
-| Eau Claire enters stylist specialty. | "Thick hair" | newStylist.specialty == "Thick hair" |
-| Eau Claire enters a client name to a stylist. | "Mary" | newStylist.client.name == "Mary" |
-| Eau Claire enters a client description to a stylist. | "Long time client" | newStylist.client.description == "Long time client" |
-| Eau Claire is greeted with a welcome splash page. | localhost:5000/ | route == "/" |
-| Eau Claire clicks on a link that sends her to a form where she can add a stylist. | "click" | HttpPost ActionResult' == Create(Stylist stylist) |
-| Eau Claire clicks on a stylist name and it goes to a page that displays all of that stylist's clients. | "click" | ActionResult ==  Details() |
-| Eau Claire clicks on a link that presents a form for a new client for a particular stylist. | "click" | HttPost ActionResult == Create (Client client) |
+| Pierre enters treat name. | "Cake" | newTreat.name == "Cake" |
+| Pierre enters treat description. | "Three-layered" | newTreat.description == "Three-layered" |
+| Pierre enters a flavor name to a treat. | "Chocolate" | newTreat.flavor.name == "Chocolate" |
+| Pierre enters a flavor description to a treat. | "Originates from organic mexican dark chocolate" | newTreat.flavor.description == "Originates from organic mexican chocolate" |
+| Pierre enters the same flavor description to a different treat. | "Originates from organic mexican dark chocolate" | newTreatTwo.flavor.description == "Originates from organic mexican chocolate" |
+| Pierre is greeted with a welcome splash page. | localhost:5000/ | route == "/" |
+| Pierre clicks on a link that sends him to a form where he can add a treat. | "click" | HttpPost ActionResult' == Create(Treat treat) |
+| Pierre clicks on a treat name and it goes to a page that displays all of that treat's flavors. | "click" | ActionResult ==  Details() |
+| Pierre clicks on a link that presents a form for a new flavor for a particular treat. | "click" | HttPost ActionResult == Create (Flavor flavor) |
+| Pierre enters an email and a password to create/register an account | Email: Pierre@Bakery.com Password: **** | CRUD functionality becomes available for Treats and Flavors |
 
 
 ## **Minimum Viable Product (MVP)**
