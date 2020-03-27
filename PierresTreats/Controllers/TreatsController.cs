@@ -37,8 +37,8 @@ namespace PierresTreats.Controllers
     public ActionResult Details(int id)
     {
       Treat thisTreat = _db.Treats
-          .Include(treat => treat.Authors)
-          .ThenInclude(join => join.Author)
+          .Include(treat => treat.Flavors)
+          .ThenInclude(join => join.Flavor)
           .FirstOrDefault(treat => treat.TreatId == id);
       return View(thisTreat);
     }
