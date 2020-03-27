@@ -24,7 +24,7 @@ _This C# codebase will build a user-friendly MVC Web application, allowing Pierr
 | Pierre clicks on a link that sends him to a form where he can add a treat. | "click" | HttpPost ActionResult' == Create(Treat treat) |
 | Pierre clicks on a treat name and it goes to a page that displays all of that treat's flavors. | "click" | ActionResult ==  Details() |
 | Pierre clicks on a link that presents a form for a new flavor for a particular treat. | "click" | HttPost ActionResult == Create (Flavor flavor) |
-| Pierre enters an email and a password to create/register an account | Email: Pierre@Bakery.com Password: **** | CRUD functionality becomes available for Treats and Flavors |
+| Pierre enters an email and a password to create/register an account | Email: "Pierre@Bakery.com" Password: **** | CRUD functionality becomes available for Treats and Flavors |
 
 
 ## **Minimum Viable Product (MVP)**
