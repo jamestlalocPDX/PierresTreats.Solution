@@ -73,25 +73,27 @@ Stretch goals include:
 
 1. Open your terminal.
 2. Navigate to the desired directory in which you want to clone this repository.
-3. Use the command `git clone https://github.com/jonathancarlos21/Eau-Claires-Salon` to clone this repository.
-4. Open this repository from within your terminal and navigate to `HairSalon/`.
+3. Use the command `git clone https://github.com/jamestlalocPDX/PierresTreats.Solution` to clone this repository.
+4. Open this repository from within your terminal and navigate to the project folder: `PierresTreats/`.
 5. Run the command `dotnet restore`.
 6. Run the command `dotnet build`.
-7. If build is successful, run the command `dotnet ef migrations add Initial`. If build failed, make necessary updates and repeat `dotnet restore` followed by `dotnet build`.
-8. Use `dotnet run` to generate a local server.
-9. Copy and paste the given `localhost:5000` onto your URL.
+7. If build is successful, run the command `dotnet ef migrations add Initial`. If build failed, make necessary updates and repeat steps 5-7.
+8. Run the command `dotnet ef database update`.
+9. Use `dotnet run` to generate a local server.
+10. Copy and paste the generated `localhost:5000` onto your URL.
 
 *Downloading this repository:*
 
 1. On the top right of this page, click the "Clone or download" button.
 2. Click on "Download ZIP."
 3. Click the downloaded file to unzip and extract this repository to your desired directory.
-4. Open this repository from within your terminal and navigate to `HairSalon/`.
+4. Open this repository from within your terminal and navigate to the project folder: `PierresTreats/`.
 5. Run the command `dotnet restore`.
 6. Run the command `dotnet build`.
-7. If build is successful, run the command `dotnet ef migrations add Initial`. If build failed, make necessary updates and repeat `dotnet restore` followed by `dotnet build`.
+7. If build is successful, run the command `dotnet ef migrations add Initial`. If build failed, make necessary updates and repeat steps 5-7.
+8. Run the command `dotnet ef database update`.
 8. Use `dotnet run` to generate a local server.
-9. Copy and paste the given `localhost:5000` onto your URL or use.
+10. Copy and paste the generated `localhost:5000` onto your URL.
 
 ## **Known Bugs**
 
