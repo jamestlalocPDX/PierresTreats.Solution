@@ -8,9 +8,6 @@
 
 _This C# codebase will build a user-friendly MVC Web application, allowing Pierre - as an authenticated and authorized user - to market his sweet and savory treats to the public._
 
-## Preview
-
-
 ## **Behavior Driven Development**
 
 | Behavior | Input | Output |
