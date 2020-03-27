@@ -27,16 +27,12 @@ _This C# codebase will build a user-friendly MVC Web application, allowing Pierr
 
 ## **Minimum Viable Product (MVP)**
 
-The MVP of this project is to allow users of this Library Catalog to add new books, new authors to a specific book (this will not be available if no books have been added), and be able to select a book, see its information, and a list of authors that belong to that book.
+The MVP of this project is to allow Pierre to create an account, log in successfully, and be granted access to CRUD functionality that is only available to users who are logged in.
 
 Stretch goals include:
 
-* Adding a form where users may search for a book by name and display a list of all results.
-* Adding a form where users may also search for an author by name. Display a list of all results.
-* Adding a feature that lets a user add multiple authors to one book.
-* Adding a feature that lets a user search for the amount of copies of a book as well as check them out.
-* Adding a feature for keeping track of books that have been checked out.
-* Adding a feature that shows a list of overdue books.
+* Add feature that creates separate roles for admins and logged-in users, allowing only admins to add, update, and delte.
+* Add an order form that only logged-in users can access, with the ability to create, read, update, and delete their own order.
 
 ## **Setup/Installation**
 
